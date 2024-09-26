@@ -26,3 +26,6 @@ new_query = f"date > '2012-01-1' and date < '2012-12-31'"
 new_date_df = df.query(new_query)
 
 print(new_date_df)
+
+# result_a = get_big_mac_price_by_year(2010,'arg')
+# print(result_a)
