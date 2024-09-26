@@ -4,7 +4,7 @@ import pandas as pd
 filename = './big-mac-full-index.csv'
 df = pd.read_csv(filename)
 
-print(df['dollar_price'])
+# print(df['dollar_price'])
 
 query = f"(iso_a3 == 'MEX')"
 mxn_df = df.query(query)
@@ -20,11 +20,11 @@ mxn_df = df.query(query)
 
 ### Row Queries
 
-# query = f"(iso_a3 == 'JPN')"
-# jpn_df = df.query(query)
-# min_idx = jpn_df['dollar_price'].idxmin()
+query = f"(iso_a3 == 'JPN')"
+jpn_df = df.query(query)
+min_idx = jpn_df['dollar_price'].idxmin()
 # # min_idx = jpn_df['dollar_price'].idxmax()
 
-# print(min_idx)
-# print(jpn_df.loc[min_idx])
+print(min_idx)
+print(jpn_df.loc[min_idx])
 # print(jpn_df.loc[min_idx]['dollar_price'])
