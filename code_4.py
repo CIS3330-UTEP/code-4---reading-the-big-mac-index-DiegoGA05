@@ -4,10 +4,12 @@ import pandas as pd
 big_mac_file = './big-mac-full-index.csv'
 df = pd.read_csv('./big-mac-full-index.csv')
 
+print(df)
+
 # print(sub_df1)
 # print(sub_df2)
 # Code complete for first example, next step is to make it case insensitive
-country_code = "ARG"
+country_code = "arg"
 year = 2012
 def get_big_mac_price_by_year(year,country_code):
     query_text_country = f"(iso_a3 == '{country_code}')"
