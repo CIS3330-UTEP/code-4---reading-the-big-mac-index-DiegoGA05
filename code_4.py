@@ -31,7 +31,6 @@ def get_big_mac_price_by_country(country_code):
     return round(sub_df1['dollar_price'].mean(),2)
 
 def get_the_cheapest_big_mac_price_by_year(year):
-    pass # Remove this line and code your function
     query_text_year = f"date >= '{year}-01-01' and date <= '{year}-12-31'"
     sub_df2_year = df.query(query_text_year)
     min_price_location = sub_df2_year.loc[sub_df2_year['dollar_price'].idxmin()]
