@@ -5,19 +5,6 @@ big_mac_file = './big-mac-full-index.csv'
 df = pd.read_csv('./big-mac-full-index.csv')
 df["iso_a3"] = df["iso_a3"].str.lower()
 
-<<<<<<< HEAD
-print(df)
-
-# print(sub_df1)
-# print(sub_df2)
-# Code complete for first example, next step is to make it case insensitive
-country_code = "arg"
-=======
-# Remove inputs after completion
-country_code = ("ARG").lower()
->>>>>>> 446590418fe52edcbc961acc69699e659fa4994d
-year = 2012
-
 def get_big_mac_price_by_year(year,country_code):
     query_text_country = f"(iso_a3 == '{country_code}')"
     sub_df1 = df.query(query_text_country)
